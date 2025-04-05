@@ -1,28 +1,26 @@
-# React + Vite
+# Weather Map web application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web application was made as a final assignment for Modern Web Application course **@MIMUW**. The app fetches the city and weather data for a region displayed on a map and then loads it on form of the markers. It's made with React and Redux.
 
-Currently, two official plugins are available:
+![image.png](./imgs/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project was made using *Vite* template.
 
 
 ### `.env` file
 
-`VITE_WEATHER_API_KEY="YOUR_API_KEY"`
+The app fetches weather data using [WeatherAPI](https://www.weatherapi.com/). You need to provide your API key for the data to be properly fetched. The key should be placed in `.env` file in following format.
 
-### How to run
+```
+VITE_WEATHER_API_KEY="YOUR_API_KEY"
+````
+
+## How to run
+
+The app is launched using npm. Simply navigate to the project folder and run:
 
 ```
 npm install
 npm run dev
 ```
 
-### Custom styled component
-
-```
-./src/features/Marker/Marker.jsx
-```
-
-`IconContainer` is an example of a custom styled component.
